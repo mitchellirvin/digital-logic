@@ -1,0 +1,20 @@
+Quartus II Archive log --	C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4ex.qarlog
+
+Archive:	C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4ex.qar
+Date:		Fri Feb 05 02:28:34 2016
+Quartus II		9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/MUX_41a.vhd
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4ex.dpf
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4ex.qpf
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4ex.qsf
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4part1.bdf
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4part1.vwf
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4part2.bdf
+C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 4/lab4part2.vwf
+c:/altera/91sp2/quartus/bin/assignment_defaults.qdf
+	======= Total: 9 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

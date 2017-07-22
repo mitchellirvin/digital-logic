@@ -1,0 +1,15 @@
+|lab7_part1
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst4.IN0
+CLK => inst.CLK
+CLK => inst1.CLK
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+R3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+X => inst11.IN0
+X => inst8.IN1
+X => R0.DATAIN
+R2 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+R1 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+R0 <= X.DB_MAX_OUTPUT_PORT_TYPE
+
+

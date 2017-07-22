@@ -1,0 +1,382 @@
+Simulator report for Part2
+Fri Mar 11 07:26:52 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 195 nodes    ;
+; Simulation Coverage         ;      88.72 % ;
+; Total Number of Transitions ; 2565         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX3000A     ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Option                                                                                     ; Setting             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Simulation mode                                                                            ; Functional          ; Timing        ;
+; Start time                                                                                 ; 0 ns                ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                ;               ;
+; Vector input source                                                                        ; ../Part 1/Part2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; Off                 ; On            ;
+; Check outputs                                                                              ; Off                 ; Off           ;
+; Report simulation coverage                                                                 ; On                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                 ; Off           ;
+; Detect glitches                                                                            ; Off                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                  ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      88.72 % ;
+; Total nodes checked                                 ; 195          ;
+; Total output ports checked                          ; 195          ;
+; Total output ports with complete 1/0-value coverage ; 173          ;
+; Total output ports with no 1/0-value coverage       ; 21           ;
+; Total output ports with no 1-value coverage         ; 21           ;
+; Total output ports with no 0-value coverage         ; 22           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |Part2|REGA3                       ; |Part2|REGA3                       ; pin_out          ;
+; |Part2|inst30                      ; |Part2|inst30                      ; regout           ;
+; |Part2|CLR                         ; |Part2|CLR                         ; out              ;
+; |Part2|CLK                         ; |Part2|CLK                         ; out              ;
+; |Part2|MSA1                        ; |Part2|MSA1                        ; out              ;
+; |Part2|MSA0                        ; |Part2|MSA0                        ; out              ;
+; |Part2|O3                          ; |Part2|O3                          ; pin_out          ;
+; |Part2|MSC0                        ; |Part2|MSC0                        ; out              ;
+; |Part2|MSC1                        ; |Part2|MSC1                        ; out              ;
+; |Part2|MSC2                        ; |Part2|MSC2                        ; out              ;
+; |Part2|inst42                      ; |Part2|inst42                      ; out0             ;
+; |Part2|REGB3                       ; |Part2|REGB3                       ; pin_out          ;
+; |Part2|inst38                      ; |Part2|inst38                      ; regout           ;
+; |Part2|MSB1                        ; |Part2|MSB1                        ; out              ;
+; |Part2|MSB0                        ; |Part2|MSB0                        ; out              ;
+; |Part2|I3                          ; |Part2|I3                          ; out              ;
+; |Part2|inst50                      ; |Part2|inst50                      ; out0             ;
+; |Part2|REGA2                       ; |Part2|REGA2                       ; pin_out          ;
+; |Part2|inst31                      ; |Part2|inst31                      ; regout           ;
+; |Part2|O2                          ; |Part2|O2                          ; pin_out          ;
+; |Part2|inst43                      ; |Part2|inst43                      ; out0             ;
+; |Part2|REGB2                       ; |Part2|REGB2                       ; pin_out          ;
+; |Part2|inst39                      ; |Part2|inst39                      ; regout           ;
+; |Part2|I2                          ; |Part2|I2                          ; out              ;
+; |Part2|inst51                      ; |Part2|inst51                      ; out0             ;
+; |Part2|REGA1                       ; |Part2|REGA1                       ; pin_out          ;
+; |Part2|inst32                      ; |Part2|inst32                      ; regout           ;
+; |Part2|O1                          ; |Part2|O1                          ; pin_out          ;
+; |Part2|inst44                      ; |Part2|inst44                      ; out0             ;
+; |Part2|REGB1                       ; |Part2|REGB1                       ; pin_out          ;
+; |Part2|inst40                      ; |Part2|inst40                      ; regout           ;
+; |Part2|I1                          ; |Part2|I1                          ; out              ;
+; |Part2|inst52                      ; |Part2|inst52                      ; out0             ;
+; |Part2|REGA0                       ; |Part2|REGA0                       ; pin_out          ;
+; |Part2|inst33                      ; |Part2|inst33                      ; regout           ;
+; |Part2|O0                          ; |Part2|O0                          ; pin_out          ;
+; |Part2|inst45                      ; |Part2|inst45                      ; out0             ;
+; |Part2|REGB0                       ; |Part2|REGB0                       ; pin_out          ;
+; |Part2|inst41                      ; |Part2|inst41                      ; regout           ;
+; |Part2|I0                          ; |Part2|I0                          ; out              ;
+; |Part2|inst53                      ; |Part2|inst53                      ; out0             ;
+; |Part2|COUT                        ; |Part2|COUT                        ; pin_out          ;
+; |Part2|74283:inst58|p74283:sub|139 ; |Part2|74283:inst58|p74283:sub|139 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|37  ; |Part2|74283:inst58|p74283:sub|37  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|19  ; |Part2|74283:inst58|p74283:sub|19  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|18  ; |Part2|74283:inst58|p74283:sub|18  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|8   ; |Part2|74283:inst58|p74283:sub|8   ; out0             ;
+; |Part2|74283:inst58|p74283:sub|31  ; |Part2|74283:inst58|p74283:sub|31  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|9   ; |Part2|74283:inst58|p74283:sub|9   ; out0             ;
+; |Part2|74283:inst58|p74283:sub|3   ; |Part2|74283:inst58|p74283:sub|3   ; out0             ;
+; |Part2|74283:inst58|p74283:sub|5   ; |Part2|74283:inst58|p74283:sub|5   ; out0             ;
+; |Part2|74283:inst58|p74283:sub|34  ; |Part2|74283:inst58|p74283:sub|34  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|144 ; |Part2|74283:inst58|p74283:sub|144 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|143 ; |Part2|74283:inst58|p74283:sub|143 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|32  ; |Part2|74283:inst58|p74283:sub|32  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|35  ; |Part2|74283:inst58|p74283:sub|35  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|25  ; |Part2|74283:inst58|p74283:sub|25  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|24  ; |Part2|74283:inst58|p74283:sub|24  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|50  ; |Part2|74283:inst58|p74283:sub|50  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|46  ; |Part2|74283:inst58|p74283:sub|46  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|145 ; |Part2|74283:inst58|p74283:sub|145 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|42  ; |Part2|74283:inst58|p74283:sub|42  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|49  ; |Part2|74283:inst58|p74283:sub|49  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|54  ; |Part2|74283:inst58|p74283:sub|54  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|53  ; |Part2|74283:inst58|p74283:sub|53  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|74  ; |Part2|74283:inst58|p74283:sub|74  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|59  ; |Part2|74283:inst58|p74283:sub|59  ; out0             ;
+; |Part2|74283:inst58|p74283:sub|147 ; |Part2|74283:inst58|p74283:sub|147 ; out0             ;
+; |Part2|MUX_41a:inst37|Y~1          ; |Part2|MUX_41a:inst37|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst37|Y~3          ; |Part2|MUX_41a:inst37|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst37|Y~4          ; |Part2|MUX_41a:inst37|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst37|Y~6          ; |Part2|MUX_41a:inst37|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst37|Y~7          ; |Part2|MUX_41a:inst37|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst37|Y~9          ; |Part2|MUX_41a:inst37|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst37|Y~10         ; |Part2|MUX_41a:inst37|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst37|Y~11         ; |Part2|MUX_41a:inst37|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst37|Y            ; |Part2|MUX_41a:inst37|Y            ; out0             ;
+; |Part2|74151:inst62|p74151:sub|23  ; |Part2|74151:inst62|p74151:sub|23  ; out0             ;
+; |Part2|74151:inst62|p74151:sub|31  ; |Part2|74151:inst62|p74151:sub|31  ; out0             ;
+; |Part2|74151:inst62|p74151:sub|30  ; |Part2|74151:inst62|p74151:sub|30  ; out0             ;
+; |Part2|74151:inst62|p74151:sub|29  ; |Part2|74151:inst62|p74151:sub|29  ; out0             ;
+; |Part2|74151:inst62|p74151:sub|28  ; |Part2|74151:inst62|p74151:sub|28  ; out0             ;
+; |Part2|74151:inst62|p74151:sub|26  ; |Part2|74151:inst62|p74151:sub|26  ; out0             ;
+; |Part2|74151:inst62|p74151:sub|24  ; |Part2|74151:inst62|p74151:sub|24  ; out0             ;
+; |Part2|MUX_41a:inst29|Y~1          ; |Part2|MUX_41a:inst29|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~3          ; |Part2|MUX_41a:inst29|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~4          ; |Part2|MUX_41a:inst29|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~5          ; |Part2|MUX_41a:inst29|Y~5          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~6          ; |Part2|MUX_41a:inst29|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~7          ; |Part2|MUX_41a:inst29|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~9          ; |Part2|MUX_41a:inst29|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst29|Y~10         ; |Part2|MUX_41a:inst29|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst29|Y~11         ; |Part2|MUX_41a:inst29|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst29|Y            ; |Part2|MUX_41a:inst29|Y            ; out0             ;
+; |Part2|MUX_41a:inst36|Y~1          ; |Part2|MUX_41a:inst36|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~3          ; |Part2|MUX_41a:inst36|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~4          ; |Part2|MUX_41a:inst36|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~6          ; |Part2|MUX_41a:inst36|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~7          ; |Part2|MUX_41a:inst36|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~8          ; |Part2|MUX_41a:inst36|Y~8          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~9          ; |Part2|MUX_41a:inst36|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst36|Y~10         ; |Part2|MUX_41a:inst36|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst36|Y~11         ; |Part2|MUX_41a:inst36|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst36|Y            ; |Part2|MUX_41a:inst36|Y            ; out0             ;
+; |Part2|74151:inst61|p74151:sub|23  ; |Part2|74151:inst61|p74151:sub|23  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|31  ; |Part2|74151:inst61|p74151:sub|31  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|30  ; |Part2|74151:inst61|p74151:sub|30  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|29  ; |Part2|74151:inst61|p74151:sub|29  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|28  ; |Part2|74151:inst61|p74151:sub|28  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|27  ; |Part2|74151:inst61|p74151:sub|27  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|26  ; |Part2|74151:inst61|p74151:sub|26  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|25  ; |Part2|74151:inst61|p74151:sub|25  ; out0             ;
+; |Part2|74151:inst61|p74151:sub|24  ; |Part2|74151:inst61|p74151:sub|24  ; out0             ;
+; |Part2|MUX_41a:inst28|Y~1          ; |Part2|MUX_41a:inst28|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~3          ; |Part2|MUX_41a:inst28|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~4          ; |Part2|MUX_41a:inst28|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~5          ; |Part2|MUX_41a:inst28|Y~5          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~6          ; |Part2|MUX_41a:inst28|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~7          ; |Part2|MUX_41a:inst28|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~9          ; |Part2|MUX_41a:inst28|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst28|Y~10         ; |Part2|MUX_41a:inst28|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst28|Y~11         ; |Part2|MUX_41a:inst28|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst28|Y            ; |Part2|MUX_41a:inst28|Y            ; out0             ;
+; |Part2|MUX_41a:inst35|Y~1          ; |Part2|MUX_41a:inst35|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~3          ; |Part2|MUX_41a:inst35|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~4          ; |Part2|MUX_41a:inst35|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~6          ; |Part2|MUX_41a:inst35|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~7          ; |Part2|MUX_41a:inst35|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~8          ; |Part2|MUX_41a:inst35|Y~8          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~9          ; |Part2|MUX_41a:inst35|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst35|Y~10         ; |Part2|MUX_41a:inst35|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst35|Y~11         ; |Part2|MUX_41a:inst35|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst35|Y            ; |Part2|MUX_41a:inst35|Y            ; out0             ;
+; |Part2|74151:inst60|p74151:sub|23  ; |Part2|74151:inst60|p74151:sub|23  ; out0             ;
+; |Part2|74151:inst60|p74151:sub|31  ; |Part2|74151:inst60|p74151:sub|31  ; out0             ;
+; |Part2|74151:inst60|p74151:sub|29  ; |Part2|74151:inst60|p74151:sub|29  ; out0             ;
+; |Part2|74151:inst60|p74151:sub|28  ; |Part2|74151:inst60|p74151:sub|28  ; out0             ;
+; |Part2|74151:inst60|p74151:sub|26  ; |Part2|74151:inst60|p74151:sub|26  ; out0             ;
+; |Part2|74151:inst60|p74151:sub|25  ; |Part2|74151:inst60|p74151:sub|25  ; out0             ;
+; |Part2|74151:inst60|p74151:sub|24  ; |Part2|74151:inst60|p74151:sub|24  ; out0             ;
+; |Part2|MUX_41a:inst27|Y~1          ; |Part2|MUX_41a:inst27|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst27|Y~3          ; |Part2|MUX_41a:inst27|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst27|Y~4          ; |Part2|MUX_41a:inst27|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst27|Y~6          ; |Part2|MUX_41a:inst27|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst27|Y~7          ; |Part2|MUX_41a:inst27|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst27|Y~9          ; |Part2|MUX_41a:inst27|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst27|Y~10         ; |Part2|MUX_41a:inst27|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst27|Y~11         ; |Part2|MUX_41a:inst27|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst27|Y            ; |Part2|MUX_41a:inst27|Y            ; out0             ;
+; |Part2|MUX_41a:inst34|Y~1          ; |Part2|MUX_41a:inst34|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst34|Y~3          ; |Part2|MUX_41a:inst34|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst34|Y~4          ; |Part2|MUX_41a:inst34|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst34|Y~6          ; |Part2|MUX_41a:inst34|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst34|Y~7          ; |Part2|MUX_41a:inst34|Y~7          ; out0             ;
+; |Part2|MUX_41a:inst34|Y~9          ; |Part2|MUX_41a:inst34|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst34|Y~10         ; |Part2|MUX_41a:inst34|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst34|Y~11         ; |Part2|MUX_41a:inst34|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst34|Y            ; |Part2|MUX_41a:inst34|Y            ; out0             ;
+; |Part2|74151:inst59|p74151:sub|23  ; |Part2|74151:inst59|p74151:sub|23  ; out0             ;
+; |Part2|74151:inst59|p74151:sub|31  ; |Part2|74151:inst59|p74151:sub|31  ; out0             ;
+; |Part2|74151:inst59|p74151:sub|29  ; |Part2|74151:inst59|p74151:sub|29  ; out0             ;
+; |Part2|74151:inst59|p74151:sub|28  ; |Part2|74151:inst59|p74151:sub|28  ; out0             ;
+; |Part2|74151:inst59|p74151:sub|25  ; |Part2|74151:inst59|p74151:sub|25  ; out0             ;
+; |Part2|74151:inst59|p74151:sub|24  ; |Part2|74151:inst59|p74151:sub|24  ; out0             ;
+; |Part2|MUX_41a:inst26|Y~1          ; |Part2|MUX_41a:inst26|Y~1          ; out0             ;
+; |Part2|MUX_41a:inst26|Y~3          ; |Part2|MUX_41a:inst26|Y~3          ; out0             ;
+; |Part2|MUX_41a:inst26|Y~4          ; |Part2|MUX_41a:inst26|Y~4          ; out0             ;
+; |Part2|MUX_41a:inst26|Y~5          ; |Part2|MUX_41a:inst26|Y~5          ; out0             ;
+; |Part2|MUX_41a:inst26|Y~6          ; |Part2|MUX_41a:inst26|Y~6          ; out0             ;
+; |Part2|MUX_41a:inst26|Y~9          ; |Part2|MUX_41a:inst26|Y~9          ; out0             ;
+; |Part2|MUX_41a:inst26|Y~10         ; |Part2|MUX_41a:inst26|Y~10         ; out0             ;
+; |Part2|MUX_41a:inst26|Y~11         ; |Part2|MUX_41a:inst26|Y~11         ; out0             ;
+; |Part2|MUX_41a:inst26|Y            ; |Part2|MUX_41a:inst26|Y            ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |Part2|CIN                        ; |Part2|CIN                        ; out              ;
+; |Part2|74283:inst58|p74283:sub|28 ; |Part2|74283:inst58|p74283:sub|28 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|10 ; |Part2|74283:inst58|p74283:sub|10 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|36 ; |Part2|74283:inst58|p74283:sub|36 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|48 ; |Part2|74283:inst58|p74283:sub|48 ; out0             ;
+; |Part2|MUX_41a:inst37|Y~5         ; |Part2|MUX_41a:inst37|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst37|Y~8         ; |Part2|MUX_41a:inst37|Y~8         ; out0             ;
+; |Part2|74151:inst62|p74151:sub|27 ; |Part2|74151:inst62|p74151:sub|27 ; out0             ;
+; |Part2|MUX_41a:inst29|Y~8         ; |Part2|MUX_41a:inst29|Y~8         ; out0             ;
+; |Part2|MUX_41a:inst36|Y~5         ; |Part2|MUX_41a:inst36|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst28|Y~8         ; |Part2|MUX_41a:inst28|Y~8         ; out0             ;
+; |Part2|MUX_41a:inst35|Y~5         ; |Part2|MUX_41a:inst35|Y~5         ; out0             ;
+; |Part2|74151:inst60|p74151:sub|27 ; |Part2|74151:inst60|p74151:sub|27 ; out0             ;
+; |Part2|MUX_41a:inst27|Y~5         ; |Part2|MUX_41a:inst27|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst27|Y~8         ; |Part2|MUX_41a:inst27|Y~8         ; out0             ;
+; |Part2|MUX_41a:inst34|Y~5         ; |Part2|MUX_41a:inst34|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst34|Y~8         ; |Part2|MUX_41a:inst34|Y~8         ; out0             ;
+; |Part2|74151:inst59|p74151:sub|30 ; |Part2|74151:inst59|p74151:sub|30 ; out0             ;
+; |Part2|74151:inst59|p74151:sub|27 ; |Part2|74151:inst59|p74151:sub|27 ; out0             ;
+; |Part2|MUX_41a:inst26|Y~7         ; |Part2|MUX_41a:inst26|Y~7         ; out0             ;
+; |Part2|MUX_41a:inst26|Y~8         ; |Part2|MUX_41a:inst26|Y~8         ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |Part2|CIN                        ; |Part2|CIN                        ; out              ;
+; |Part2|74283:inst58|p74283:sub|28 ; |Part2|74283:inst58|p74283:sub|28 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|10 ; |Part2|74283:inst58|p74283:sub|10 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|36 ; |Part2|74283:inst58|p74283:sub|36 ; out0             ;
+; |Part2|74283:inst58|p74283:sub|48 ; |Part2|74283:inst58|p74283:sub|48 ; out0             ;
+; |Part2|MUX_41a:inst37|Y~5         ; |Part2|MUX_41a:inst37|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst37|Y~8         ; |Part2|MUX_41a:inst37|Y~8         ; out0             ;
+; |Part2|74151:inst62|p74151:sub|27 ; |Part2|74151:inst62|p74151:sub|27 ; out0             ;
+; |Part2|MUX_41a:inst29|Y~8         ; |Part2|MUX_41a:inst29|Y~8         ; out0             ;
+; |Part2|MUX_41a:inst36|Y~5         ; |Part2|MUX_41a:inst36|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst28|Y~8         ; |Part2|MUX_41a:inst28|Y~8         ; out0             ;
+; |Part2|MUX_41a:inst35|Y~5         ; |Part2|MUX_41a:inst35|Y~5         ; out0             ;
+; |Part2|74151:inst60|p74151:sub|30 ; |Part2|74151:inst60|p74151:sub|30 ; out0             ;
+; |Part2|74151:inst60|p74151:sub|27 ; |Part2|74151:inst60|p74151:sub|27 ; out0             ;
+; |Part2|MUX_41a:inst27|Y~5         ; |Part2|MUX_41a:inst27|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst27|Y~8         ; |Part2|MUX_41a:inst27|Y~8         ; out0             ;
+; |Part2|MUX_41a:inst34|Y~5         ; |Part2|MUX_41a:inst34|Y~5         ; out0             ;
+; |Part2|MUX_41a:inst34|Y~8         ; |Part2|MUX_41a:inst34|Y~8         ; out0             ;
+; |Part2|74151:inst59|p74151:sub|30 ; |Part2|74151:inst59|p74151:sub|30 ; out0             ;
+; |Part2|74151:inst59|p74151:sub|27 ; |Part2|74151:inst59|p74151:sub|27 ; out0             ;
+; |Part2|MUX_41a:inst26|Y~7         ; |Part2|MUX_41a:inst26|Y~7         ; out0             ;
+; |Part2|MUX_41a:inst26|Y~8         ; |Part2|MUX_41a:inst26|Y~8         ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Mar 11 07:26:52 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Part2 -c Part2
+Info: Using vector source file "../Part 1/Part2.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Part2.vwf called Part2.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 1.95 us on register "|Part2|inst31"
+Warning: Found clock-sensitive change during active clock edge at time 1.95 us on register "|Part2|inst32"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      88.72 %
+Info: Number of transitions in simulation is 2565
+Info: Vector file Part2.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Fri Mar 11 07:26:52 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

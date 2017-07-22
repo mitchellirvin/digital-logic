@@ -1,0 +1,18 @@
+[ProjectWorkspace]
+ptn_Child1=Frames
+[ProjectWorkspace.Frames]
+ptn_Child1=ChildFrames
+[ProjectWorkspace.Frames.ChildFrames]
+ptn_Child1=Document-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0]
+ptn_Child1=ViewFrame-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
+DocPathName=lab7_part2.vwf
+DocumentCLSID={4a9ed22a-e60b-11d1-a0bd-0020affa43f2}
+IsChildFrameDetached=False
+IsActiveChildFrame=True
+ptn_Child1=StateMap
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0.StateMap]
+AFC_SIM_AP_NAME=lab7_part2
+AFC_PROJ_DB_PATH=C:/Users/Owner/Documents/Spring 2015/EEL3701C/lab7_part2/db/lab7_part2.quartus_db
+AFC_IN_REPORT=False

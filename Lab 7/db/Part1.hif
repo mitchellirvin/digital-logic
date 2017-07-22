@@ -1,0 +1,107 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+29
+1784
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Part1
+# storage
+db|Part1.(0).cnf
+db|Part1.(0).cnf
+# case_insensitive
+# source_file
+part1.bdf
+27898533a11a0cc63275e9ca710b1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+part2_1
+# storage
+db|Part1.(1).cnf
+db|Part1.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+part2_1.vhd
+7f8568e015137173b6736a2bb556dedf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+part2_2
+# storage
+db|Part1.(2).cnf
+db|Part1.(2).cnf
+# case_insensitive
+# source_file
+part2_2.bdf
+23c77bbba7246cc181518bf542d879c0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+part3
+# storage
+db|Part1.(3).cnf
+db|Part1.(3).cnf
+# case_insensitive
+# source_file
+part3.bdf
+9b6bffb67cd8b6ab8bc3e5c491ebd7c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

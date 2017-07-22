@@ -1,0 +1,83 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 07:18:27  March 11, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Part2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX3000A
+set_global_assignment -name DEVICE "EPM3064ALC44-10"
+set_global_assignment -name TOP_LEVEL_ENTITY Part2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:18:27  MARCH 11, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VECTOR_WAVEFORM_FILE "../Part 1/Part2.vwf"
+set_global_assignment -name VHDL_FILE MUX41.vhd
+set_global_assignment -name BDF_FILE Part2.bdf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "../Part 1/Part2.vwf"
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+set_global_assignment -name MISC_FILE "C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 6/Part 2/Part2.dpf"
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_41 -to CLK
+set_location_assignment PIN_4 -to COUT
+set_location_assignment PIN_27 -to I0
+set_location_assignment PIN_26 -to I1
+set_location_assignment PIN_25 -to I2
+set_location_assignment PIN_24 -to I3
+set_location_assignment PIN_29 -to MSA0
+set_location_assignment PIN_28 -to MSA1
+set_location_assignment PIN_33 -to MSB0
+set_location_assignment PIN_31 -to MSB1
+set_location_assignment PIN_39 -to MSC0
+set_location_assignment PIN_37 -to MSC1
+set_location_assignment PIN_34 -to MSC2
+set_location_assignment PIN_5 -to O0
+set_location_assignment PIN_6 -to O1
+set_location_assignment PIN_8 -to O2
+set_location_assignment PIN_9 -to O3
+set_location_assignment PIN_18 -to REGA0
+set_location_assignment PIN_19 -to REGA1
+set_location_assignment PIN_20 -to REGA2
+set_location_assignment PIN_21 -to REGA3
+set_location_assignment PIN_11 -to REGB0
+set_location_assignment PIN_12 -to REGB1
+set_location_assignment PIN_14 -to REGB2
+set_location_assignment PIN_16 -to REGB3
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name AUTO_LCELL_INSERTION OFF
+set_location_assignment PIN_40 -to CLR

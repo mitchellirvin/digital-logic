@@ -1,0 +1,66 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity controller is port (
+	Q2, Q1, Q0, IR2, IR1, IR0, CLK, CLR: in bit;
+	MSA1, MSA0, MSB1, MSB0, MSC2, MSC1, MSC0, IRLD, PCINC, PCLD: out bit;
+	Q2N, Q1N, Q0N: out bit 
+	);
+end controller;
+
+architecture logic OF controller IS
+begin
+
+
+MSA1 <= ((not Q2) and (not Q1) and Q0) and (
+((not IR2) and IR1 and IR0) or
+(IR2 and (not IR1) and (not IR0)) or
+(IR2 and (not IR1) and IR0) )
+and CLR;
+
+MSA0 <= (Q2 or (not Q1) or Q0)
+and CLR;
+
+MSB1 <= ((not IR2) or (not IR1) or (not IR0)) and (
+(Q2 or Q1 or (not Q0)) and
+(Q2 or (not Q1) or Q0) and
+(Q2 or (not Q1) or (not Q0)) )
+and CLR;
+
+MSB0 <= (IR2 and IR1 and IR0) and (
+((not Q2) and (not Q1) and Q0) or 
+((not Q2) and Q1 and (not Q0)) )
+and CLR;
+
+MSC2 <= TRUE and CLR;
+
+MSC1 <= (Q2 or Q1 or (not Q0) or (not IR2) or IR1 or (not IR0))
+and CLR;
+
+MSC0 <= (Q2 or Q1 or (not Q0) or (not IR1) or IR2 or (not IR0)) 
+and CLR;
+
+IRLD <= ((not Q2) and (not Q1) and (not Q0)) 
+and CLR;
+
+PCINC <= (Q1 or Q0)
+and CLR;
+
+PCLD <= (Q2 and (not Q1) and (not Q0)) 
+and CLR;
+
+Q2N <= ((not Q2) and (not Q1) and Q0 and (not IR2) and (not IR1) and (not IR0)) 
+and CLR;
+
+Q1N <= ((not Q2) and (not Q1) and Q0) and (
+((not IR2) and IR1 and (not IR0)) or 
+(IR2 and IR1 and (not IR0)) ) 
+and CLR;
+
+Q0N <= ((not IR2) and IR1 and (not IR0)) and (
+(Q2 and Q1 and Q0) or 
+(Q2 and Q1 and (not Q0)) )  
+and CLR;
+
+end logic;
+

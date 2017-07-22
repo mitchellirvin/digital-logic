@@ -1,0 +1,9 @@
+Fitter Status : Successful - Fri Feb 05 16:32:19 2016
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : lab4ex
+Top-level Entity Name : lab4part1
+Family : MAX3000A
+Device : EPM3064ALC44-10
+Timing Models : Final
+Total macrocells : 3 / 64 ( 5 % )
+Total pins : 11 / 34 ( 32 % )

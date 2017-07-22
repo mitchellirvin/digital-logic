@@ -1,0 +1,472 @@
+Fitter report for Lab8
+Fri Apr 08 04:59:51 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. I/O Standard
+ 11. Dedicated Inputs I/O
+ 12. Output Pin Default Load For Reported TCO
+ 13. Fitter Resource Utilization by Entity
+ 14. Control Signals
+ 15. Global & Other Fast Signals
+ 16. Non-Global High Fan-Out Signals
+ 17. Interconnect Usage Summary
+ 18. LAB Macrocells
+ 19. Parallel Expander
+ 20. Shareable Expander
+ 21. Logic Cell Interconnection
+ 22. Fitter Device Options
+ 23. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------+
+; Fitter Summary                                                       ;
++-----------------------+----------------------------------------------+
+; Fitter Status         ; Successful - Fri Apr 08 04:59:51 2016        ;
+; Quartus II Version    ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name         ; Lab8                                         ;
+; Top-level Entity Name ; part1                                        ;
+; Family                ; MAX3000A                                     ;
+; Device                ; EPM3064ALC44-10                              ;
+; Timing Models         ; Final                                        ;
+; Total macrocells      ; 26 / 64 ( 41 % )                             ;
+; Total pins            ; 29 / 34 ( 85 % )                             ;
++-----------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                              ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM3064ALC44-10 ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Use TimeQuest Timing Analyzer                                              ; Off             ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; On              ; On            ;
+; Limit to One Fitting Attempt                                               ; Off             ; Off           ;
+; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
+; Slow Slew Rate                                                             ; Off             ; Off           ;
+; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
+; Use Best Effort Settings for Compilation                                   ; Off             ; Off           ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/Mitch/Classes/Spring 2016/EEL 3701_Digital Logic/Lab 8/Lab8.pin.
+
+
++------------------------------------------------------+
+; Fitter Resource Usage Summary                        ;
++-----------------------------------+------------------+
+; Resource                          ; Usage            ;
++-----------------------------------+------------------+
+; Logic cells                       ; 26 / 64 ( 41 % ) ;
+; Registers                         ; 11 / 64 ( 17 % ) ;
+; Number of pterms used             ; 89               ;
+; User inserted logic elements      ; 0                ;
+; I/O pins                          ; 29 / 34 ( 85 % ) ;
+;     -- Clock pins                 ; 1 / 2 ( 50 % )   ;
+;     -- Dedicated input pins       ; 0 / 2 ( 0 % )    ;
+; Global signals                    ; 1                ;
+; Shareable expanders               ; 15 / 64 ( 23 % ) ;
+; Parallel expanders                ; 6 / 60 ( 10 % )  ;
+; Cells using turbo bit             ; 26 / 64 ( 41 % ) ;
+; Maximum fan-out node              ; inst5            ;
+; Maximum fan-out                   ; 27               ;
+; Highest non-global fan-out signal ; inst5            ;
+; Highest non-global fan-out        ; 27               ;
+; Total fan-out                     ; 227              ;
+; Average fan-out                   ; 3.24             ;
++-----------------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; Name ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; I/O Standard ; Location assigned by ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; CIN  ; 31    ; --       ; 3   ; 11                    ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; CLK  ; 43    ; --       ; --  ; 11                    ; 0                  ; yes    ; 3.3-V LVTTL  ; User                 ;
+; CLR  ; 33    ; --       ; 4   ; 11                    ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; I0   ; 27    ; --       ; 3   ; 2                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; I1   ; 26    ; --       ; 3   ; 2                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; I2   ; 25    ; --       ; 3   ; 1                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
+; I3   ; 24    ; --       ; 3   ; 2                     ; 0                  ; no     ; 3.3-V LVTTL  ; User                 ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                               ;
++-------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name  ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++-------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; IR0   ; 8     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; IR1   ; 9     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; IRLD  ; 11    ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSA0  ; 20    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSA1  ; 21    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSB0  ; 18    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSB1  ; 19    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSC0  ; 12    ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSC1  ; 14    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; MSC2  ; 16    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGA0 ; 34    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGA1 ; 4     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGA2 ; 5     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGA3 ; 6     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGB0 ; 41    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGB1 ; 37    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGB2 ; 28    ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
+; REGB3 ; 29    ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; User                 ; 10 pF ; -                    ; -                   ;
++-------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 0          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 2        ; 1          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 3        ; 2          ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 4        ; 3          ; --       ; REGA1          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 5        ; 4          ; --       ; REGA2          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 6        ; 5          ; --       ; REGA3          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 7        ; 6          ; --       ; TDI            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 8        ; 7          ; --       ; IR0            ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 9        ; 8          ; --       ; IR1            ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 10       ; 9          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 11       ; 10         ; --       ; IRLD           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 12       ; 11         ; --       ; MSC0           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 13       ; 12         ; --       ; TMS            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 14       ; 13         ; --       ; MSC1           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 15       ; 14         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 16       ; 15         ; --       ; MSC2           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 17       ; 16         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 18       ; 17         ; --       ; MSB0           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 19       ; 18         ; --       ; MSB1           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 20       ; 19         ; --       ; MSA0           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 21       ; 20         ; --       ; MSA1           ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 22       ; 21         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 23       ; 22         ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 24       ; 23         ; --       ; I3             ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 25       ; 24         ; --       ; I2             ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 26       ; 25         ; --       ; I1             ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 27       ; 26         ; --       ; I0             ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 28       ; 27         ; --       ; REGB2          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 29       ; 28         ; --       ; REGB3          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 30       ; 29         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 31       ; 30         ; --       ; CIN            ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 32       ; 31         ; --       ; TCK            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 33       ; 32         ; --       ; CLR            ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 34       ; 33         ; --       ; REGA0          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 35       ; 34         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 36       ; 35         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 37       ; 36         ; --       ; REGB1          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 38       ; 37         ; --       ; TDO            ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 39       ; 38         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 40       ; 39         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 41       ; 40         ; --       ; REGB0          ; output ; 3.3-V LVTTL  ;         ; Y               ;
+; 42       ; 41         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 43       ; 42         ; --       ; CLK            ; input  ; 3.3-V LVTTL  ;         ; Y               ;
+; 44       ; 43         ; --       ; GND+           ;        ;              ;         ;                 ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; 3.3-V LVTTL  ; -          ; 1                    ; 0                 ; 0                 ; 1     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Dedicated Inputs I/O                                               ;
++------+-------+-------+-------+--------------+------------+---------+
+; Name ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++------+-------+-------+-------+--------------+------------+---------+
+; CLK  ; 43    ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
++------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; 3.3-V PCI    ; 10 pF ; 25 Ohm (Parallel)      ;
+; 2.5 V        ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                     ;
++----------------------------+------------+------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name                       ; Library Name ;
++----------------------------+------------+------+-------------------------------------------+--------------+
+; |part1                     ; 26         ; 29   ; |part1                                    ; work         ;
+;    |Part2:inst|            ; 16         ; 0    ; |part1|Part2:inst                         ; work         ;
+;       |74283:inst58|       ; 1          ; 0    ; |part1|Part2:inst|74283:inst58            ; work         ;
+;          |p74283:sub|      ; 1          ; 0    ; |part1|Part2:inst|74283:inst58|p74283:sub ; work         ;
+;       |MUX_41a:inst26|     ; 1          ; 0    ; |part1|Part2:inst|MUX_41a:inst26          ; work         ;
+;       |MUX_41a:inst27|     ; 4          ; 0    ; |part1|Part2:inst|MUX_41a:inst27          ; work         ;
+;       |MUX_41a:inst28|     ; 1          ; 0    ; |part1|Part2:inst|MUX_41a:inst28          ; work         ;
+;       |MUX_41a:inst29|     ; 1          ; 0    ; |part1|Part2:inst|MUX_41a:inst29          ; work         ;
+;    |controller:inst26|     ; 4          ; 0    ; |part1|controller:inst26                  ; work         ;
++----------------------------+------------+------+-------------------------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                               ;
++--------------------------------+----------+---------+----------------------+--------+----------------------+------------------+
+; Name                           ; Location ; Fan-Out ; Usage                ; Global ; Global Resource Used ; Global Line Name ;
++--------------------------------+----------+---------+----------------------+--------+----------------------+------------------+
+; CLK                            ; PIN_43   ; 11      ; Clock                ; yes    ; On                   ; --               ;
+; CLR                            ; PIN_33   ; 11      ; Async. clear, Preset ; no     ; --                   ; --               ;
+; Part2:inst|MUX_41a:inst26|Y~10 ; SEXP14   ; 3       ; Clock enable         ; no     ; --                   ; --               ;
+; inst5                          ; LC3      ; 27      ; Clock enable         ; no     ; --                   ; --               ;
++--------------------------------+----------+---------+----------------------+--------+----------------------+------------------+
+
+
++---------------------------------------------------------------------+
+; Global & Other Fast Signals                                         ;
++------+----------+---------+----------------------+------------------+
+; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
++------+----------+---------+----------------------+------------------+
+; CLK  ; PIN_43   ; 11      ; On                   ; --               ;
++------+----------+---------+----------------------+------------------+
+
+
++----------------------------------------------------+
+; Non-Global High Fan-Out Signals                    ;
++------------------------------------------+---------+
+; Name                                     ; Fan-Out ;
++------------------------------------------+---------+
+; inst5                                    ; 27      ;
+; inst1                                    ; 24      ;
+; inst2                                    ; 22      ;
+; Part2:inst|inst41                        ; 14      ;
+; Part2:inst|inst32                        ; 13      ;
+; Part2:inst|inst40                        ; 13      ;
+; CIN                                      ; 11      ;
+; CLR                                      ; 11      ;
+; Part2:inst|inst33                        ; 10      ;
+; Part2:inst|inst31                        ; 9       ;
+; Part2:inst|inst39                        ; 8       ;
+; Part2:inst|inst30                        ; 4       ;
+; Part2:inst|inst38                        ; 4       ;
+; Part2:inst|MUX_41a:inst26|Y~10           ; 3       ;
+; Part2:inst|MUX_41a:inst28|Y~7            ; 3       ;
+; I0                                       ; 2       ;
+; I1                                       ; 2       ;
+; I3                                       ; 2       ;
+; Part2:inst|MUX_41a:inst27|Y~9            ; 2       ;
+; Part2:inst|MUX_41a:inst27|Y~7            ; 2       ;
+; Part2:inst|MUX_41a:inst28|Y~12           ; 2       ;
+; Part2:inst|MUX_41a:inst28|Y~11           ; 2       ;
+; Part2:inst|MUX_41a:inst28|Y~10           ; 2       ;
+; Part2:inst|MUX_41a:inst28|Y~27           ; 1       ;
+; Part2:inst|MUX_41a:inst28|Y~26           ; 1       ;
+; I2                                       ; 1       ;
+; ~VCC~1                                   ; 1       ;
+; ~VCC~0                                   ; 1       ;
+; Part2:inst|MUX_41a:inst26|Y~19           ; 1       ;
+; Part2:inst|MUX_41a:inst27|Y~33           ; 1       ;
+; Part2:inst|MUX_41a:inst27|Y~27           ; 1       ;
+; Part2:inst|MUX_41a:inst27|Y~21           ; 1       ;
+; Part2:inst|MUX_41a:inst28|Y~20           ; 1       ;
+; Part2:inst|MUX_41a:inst29|Y~13           ; 1       ;
+; Part2:inst|74283:inst58|p74283:sub|134~5 ; 1       ;
+; Part2:inst|74283:inst58|p74283:sub|134~4 ; 1       ;
+; Part2:inst|74283:inst58|p74283:sub|134~3 ; 1       ;
+; Part2:inst|74283:inst58|p74283:sub|134~2 ; 1       ;
+; Part2:inst|74283:inst58|p74283:sub|134~1 ; 1       ;
+; Part2:inst|MUX_41a:inst27|Y~16           ; 1       ;
+; Part2:inst|MUX_41a:inst28|Y~8            ; 1       ;
+; Part2:inst|MUX_41a:inst28|Y~6            ; 1       ;
+; controller:inst26|inst16~5               ; 1       ;
+; controller:inst26|inst16~2               ; 1       ;
+; controller:inst26|inst21~2               ; 1       ;
+; inst2~1                                  ; 1       ;
+; controller:inst26|inst13~2               ; 1       ;
++------------------------------------------+---------+
+
+
++------------------------------------------------+
+; Interconnect Usage Summary                     ;
++----------------------------+-------------------+
+; Interconnect Resource Type ; Usage             ;
++----------------------------+-------------------+
+; Output enables             ; 0 / 6 ( 0 % )     ;
+; PIA buffers                ; 41 / 144 ( 28 % ) ;
++----------------------------+-------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 6.50) ; Number of LABs  (Total = 4) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 0                           ;
+; 1                                      ; 0                           ;
+; 2                                      ; 1                           ;
+; 3                                      ; 0                           ;
+; 4                                      ; 0                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 1                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 0                           ;
+; 9                                      ; 2                           ;
++----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 3                            ;
+; 2                        ; 0                            ;
+; 3                        ; 1                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 3.75) ; Number of LABs  (Total = 2) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 2                           ;
+; 1                                               ; 0                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 1                           ;
+; 8                                               ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
++-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                                                                                                                                                                        ; Output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC3        ; CLK, CLR                                                                                                                                                                                                                                                                                                                     ; IRLD, inst1, inst2, controller:inst26|inst13~2, controller:inst26|inst21~2, controller:inst26|inst16~2, controller:inst26|inst16~5, Part2:inst|inst38, Part2:inst|inst39, Part2:inst|inst40, Part2:inst|inst41, Part2:inst|inst33, Part2:inst|MUX_41a:inst28|Y~6, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|MUX_41a:inst28|Y~12, Part2:inst|inst32, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|inst31, Part2:inst|inst30, Part2:inst|MUX_41a:inst29|Y~13, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33, Part2:inst|MUX_41a:inst26|Y~19, Part2:inst|MUX_41a:inst28|Y~27 ;
+;  A  ; LC4        ; CLK, I1, CLR, inst5                                                                                                                                                                                                                                                                                                          ; IR1, controller:inst26|inst13~2, controller:inst26|inst21~2, controller:inst26|inst16~2, controller:inst26|inst16~5, Part2:inst|inst38, Part2:inst|inst39, Part2:inst|inst40, Part2:inst|inst41, Part2:inst|inst33, Part2:inst|MUX_41a:inst28|Y~6, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|MUX_41a:inst28|Y~12, Part2:inst|inst32, Part2:inst|MUX_41a:inst26|Y~10, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|inst30, Part2:inst|MUX_41a:inst29|Y~13, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33, Part2:inst|MUX_41a:inst28|Y~27                                   ;
+;  A  ; LC5        ; CLK, I0, CLR, inst5                                                                                                                                                                                                                                                                                                          ; IR0, inst2~1, controller:inst26|inst21~2, controller:inst26|inst16~2, controller:inst26|inst16~5, Part2:inst|inst38, Part2:inst|inst39, Part2:inst|inst40, Part2:inst|inst41, Part2:inst|inst33, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|MUX_41a:inst28|Y~12, Part2:inst|inst32, Part2:inst|MUX_41a:inst26|Y~10, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|inst30, Part2:inst|MUX_41a:inst29|Y~13, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33                                                                                                                     ;
+;  A  ; LC1        ; inst2                                                                                                                                                                                                                                                                                                                        ; MSC0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  A  ; LC16       ; CLK, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|MUX_41a:inst28|Y~12, Part2:inst|inst41, Part2:inst|inst32, Part2:inst|inst40, inst2, inst5, inst1, CLR, Part2:inst|MUX_41a:inst26|Y~10, Part2:inst|inst33                                                    ; Part2:inst|inst40, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|inst32, REGA1, Part2:inst|MUX_41a:inst27|Y~9, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|74283:inst58|p74283:sub|134~2, Part2:inst|74283:inst58|p74283:sub|134~5, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33                                                                                                                                                                                                                                                                                            ;
+;  A  ; LC14       ; CLK, Part2:inst|MUX_41a:inst27|Y~16, CLR, inst5, Part2:inst|MUX_41a:inst26|Y~10                                                                                                                                                                                                                                              ; Part2:inst|inst39, Part2:inst|MUX_41a:inst27|Y~16, REGA2, Part2:inst|74283:inst58|p74283:sub|134~1, Part2:inst|74283:inst58|p74283:sub|134~5, Part2:inst|inst30, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  A  ; LC11       ; CLK, Part2:inst|MUX_41a:inst26|Y~19, I3, inst1, Part2:inst|74283:inst58|p74283:sub|134~5, inst5, inst2, Part2:inst|inst31, CLR, Part2:inst|MUX_41a:inst26|Y~10                                                                                                                                                               ; Part2:inst|inst38, Part2:inst|74283:inst58|p74283:sub|134~3, Part2:inst|74283:inst58|p74283:sub|134~4, REGA3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  A  ; LC15       ; Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|MUX_41a:inst28|Y~12, Part2:inst|MUX_41a:inst28|Y~6, I1, Part2:inst|MUX_41a:inst28|Y~26, Part2:inst|inst32, Part2:inst|inst40, Part2:inst|inst33, inst5, inst1, Part2:inst|MUX_41a:inst28|Y~8, CIN, inst2                                          ; Part2:inst|inst32                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  A  ; LC10       ; I3, inst5                                                                                                                                                                                                                                                                                                                    ; Part2:inst|inst30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  B  ; LC17       ; inst5, inst1                                                                                                                                                                                                                                                                                                                 ; MSA1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC19       ; inst2, inst5, inst1                                                                                                                                                                                                                                                                                                          ; MSA0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC20       ; inst2, inst5, inst1                                                                                                                                                                                                                                                                                                          ; MSB1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC21       ; inst2, inst5, inst1                                                                                                                                                                                                                                                                                                          ; MSB0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC30       ;                                                                                                                                                                                                                                                                                                                              ; MSC1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC25       ;                                                                                                                                                                                                                                                                                                                              ; MSC2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  C  ; LC41       ; CLK, Part2:inst|inst30, inst2, inst5, inst1, Part2:inst|inst38, CLR                                                                                                                                                                                                                                                          ; Part2:inst|inst38, REGB3, Part2:inst|74283:inst58|p74283:sub|134~3, Part2:inst|74283:inst58|p74283:sub|134~4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  C  ; LC40       ; CLK, Part2:inst|inst31, inst2, inst5, inst1, Part2:inst|inst39, CLR                                                                                                                                                                                                                                                          ; Part2:inst|inst39, REGB2, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|74283:inst58|p74283:sub|134~1, Part2:inst|74283:inst58|p74283:sub|134~5, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  D  ; LC53       ; CLK, Part2:inst|inst32, inst2, inst5, inst1, Part2:inst|inst40, CLR                                                                                                                                                                                                                                                          ; Part2:inst|inst40, REGB1, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|inst32, Part2:inst|MUX_41a:inst27|Y~9, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|74283:inst58|p74283:sub|134~2, Part2:inst|74283:inst58|p74283:sub|134~5, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst27|Y~33                                                                                                                                                                                                                                                                                            ;
+;  D  ; LC64       ; CLK, Part2:inst|inst33, inst2, inst5, inst1, Part2:inst|inst41, CLR                                                                                                                                                                                                                                                          ; Part2:inst|inst41, REGB0, Part2:inst|inst33, Part2:inst|MUX_41a:inst28|Y~7, Part2:inst|MUX_41a:inst28|Y~8, Part2:inst|MUX_41a:inst28|Y~10, Part2:inst|MUX_41a:inst28|Y~11, Part2:inst|inst32, Part2:inst|MUX_41a:inst27|Y~7, Part2:inst|74283:inst58|p74283:sub|134~5, Part2:inst|MUX_41a:inst29|Y~13, Part2:inst|MUX_41a:inst27|Y~33, Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst28|Y~26                                                                                                                                                                                                                                                                                     ;
+;  D  ; LC51       ; CLK, Part2:inst|MUX_41a:inst29|Y~13, inst2, Part2:inst|inst41, CIN, inst1, inst5, I0, Part2:inst|inst33, CLR                                                                                                                                                                                                                 ; Part2:inst|inst41, Part2:inst|inst33, REGA0, Part2:inst|MUX_41a:inst28|Y~8, Part2:inst|MUX_41a:inst28|Y~12, Part2:inst|MUX_41a:inst27|Y~16, Part2:inst|74283:inst58|p74283:sub|134~5, Part2:inst|MUX_41a:inst28|Y~20, Part2:inst|MUX_41a:inst27|Y~33, Part2:inst|inst32                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  D  ; LC57       ; Part2:inst|MUX_41a:inst27|Y~33, Part2:inst|MUX_41a:inst27|Y~7, Part2:inst|inst33, Part2:inst|inst31, Part2:inst|inst39, inst2, Part2:inst|inst32, inst5, inst1, Part2:inst|inst40, Part2:inst|MUX_41a:inst28|Y~7                                                                                                             ; Part2:inst|inst31                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  D  ; LC49       ; Part2:inst|inst31, Part2:inst|inst39, Part2:inst|74283:inst58|p74283:sub|134~1, Part2:inst|inst32, Part2:inst|inst40, Part2:inst|74283:inst58|p74283:sub|134~2, Part2:inst|inst41, CIN, Part2:inst|MUX_41a:inst28|Y~7, Part2:inst|inst33, Part2:inst|74283:inst58|p74283:sub|134~3, Part2:inst|74283:inst58|p74283:sub|134~4 ; Part2:inst|inst30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  D  ; LC50       ; inst2, Part2:inst|inst41, CIN, inst1, inst5                                                                                                                                                                                                                                                                                  ; Part2:inst|inst33                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  D  ; LC54       ; Part2:inst|inst40, Part2:inst|inst31, Part2:inst|inst39, Part2:inst|inst32, inst5, inst1, inst2                                                                                                                                                                                                                              ; Part2:inst|MUX_41a:inst27|Y~27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  D  ; LC55       ; Part2:inst|MUX_41a:inst27|Y~21, Part2:inst|inst40, Part2:inst|inst31, Part2:inst|inst39, inst2, inst5, inst1, Part2:inst|inst32, Part2:inst|MUX_41a:inst27|Y~9, CIN, Part2:inst|inst41                                                                                                                                       ; Part2:inst|MUX_41a:inst27|Y~33                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  D  ; LC56       ; Part2:inst|MUX_41a:inst27|Y~27, Part2:inst|MUX_41a:inst28|Y~7, Part2:inst|inst33, Part2:inst|inst40, Part2:inst|inst31, Part2:inst|inst39, inst2, inst5, inst1, Part2:inst|inst32, Part2:inst|MUX_41a:inst27|Y~9, CIN, Part2:inst|inst41, Part2:inst|MUX_41a:inst27|Y~7, Part2:inst|MUX_41a:inst28|Y~27, I2                  ; Part2:inst|MUX_41a:inst27|Y~16                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Apr 08 04:59:51 2016
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Lab8 -c Lab8
+Info: Selected device EPM3064ALC44-10 for design "Lab8"
+Info: Quartus II Fitter was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 201 megabytes
+    Info: Processing ended: Fri Apr 08 04:59:51 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
